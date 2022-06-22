@@ -79,6 +79,10 @@ input[type="text"] {
     width: 125px;
 }
 
+input:focus {
+    outline: none;
+}
+
 /* section booking */
 
 .booking {
@@ -115,7 +119,7 @@ input[type="text"] {
     color: #FFF;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: all 500ms;
+    transition: background 100ms, box-shadow 500ms;
 }
 
 .booking__btn > button:hover {
@@ -178,11 +182,20 @@ nav h2 {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+.filters__btn:hover {
+    background-color: #9256dc41;
+}
+
+.filters__btn:hover i {
+    color: #9356DC;
+}
+
 .filters__btn i {
     margin-right: 20px;
     color: #838282;
     font-size: 18px;
 }
+
 
 .filters__title {
     font-weight: bold;
@@ -283,7 +296,7 @@ nav h2 {
     background-clip: text;
     color: transparent;
     transform-origin: bottom;
-    transition: all 1200ms ease-in;
+    transition: all 300ms ease-in;
     
 }
 
