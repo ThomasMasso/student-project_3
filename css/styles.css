@@ -436,7 +436,7 @@ footer i {
     margin-bottom: 50px;
 }
 
-.menu__title {
+.menu__header {
     text-transform: uppercase;
 }
 
@@ -451,53 +451,67 @@ footer i {
 
 /* menu card */
 
-.btn__card:hover {
-    cursor: pointer;
+.menu__items {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-
-.menu__txt {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+.menu__item {
     width: 100%;
 }
 
-.menu__card {
+.menu__item:hover {
+    cursor: pointer;
+}
+
+.menu__item-container {
     display: flex;
     background: #FFF;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     margin-bottom: 15px;
     margin-top: 15px;
-    width: 95%;
     height: 70px;
     overflow: hidden;
+    /* border: 1px solid orange; */
 }
 
-.card__text {
+.menu__texte-container {
+    display: flex;
+    align-items: flex-end;
+    width: 82%;
+    flex-grow: 1;
+}
+
+.menu__item-header {
     padding: 13px 0 13px 13px;
-    width: 70%;
+    width: 81%;
+    height: 100%;
+    /* border: 1px solid blue; */
+}
+
+.menu__item-header > h3 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
-.card__text > h3 {
+.menu__item-header > p {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-}
-
-.card__quote {
     font-size: 14px;
+    margin-top: 5px;
 }
 
-.card__price {
+.menu__item-price {
     font-weight: bold;
-    padding-right: 3%;
     padding-bottom: 13px;
+    width: 20%;
+    margin: 0 4% 0 5%;
+    /* border: 1px solid red; */
 }
 
 .add-to-cart {
@@ -509,18 +523,24 @@ footer i {
     font-size: 17px;
     background: #99e2d0;
     color: #FFF;
-    /* z-index: -1; */
     transform: translateX(100%);
-    /* transform-origin: right; */
     transition: all 300ms;
+    /* border: 1px solid greenyellow; */
 }
 
 
-.menu__card:hover .add-to-cart {
-    /* z-index: 1; */
+.menu__item-container:hover .add-to-cart {
     transform: translateX(0);
     width: 18%;
 }
+
+.menu__item-container:hover .menu__item-price {
+    margin: 0 6% 0 5%;
+}
+
+/* .menu__card:hover .menu__txt {
+    width: 85%;
+} */
 
 @keyframes spin {
     0% {
