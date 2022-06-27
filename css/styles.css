@@ -121,7 +121,7 @@ input:focus {
     color: #FFF;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: background 10000ms, box-shadow 300ms;
+    /* transition: background 200ms, box-shadow 200ms; */
 }
 
 .booking__btn > button:hover {
@@ -570,13 +570,12 @@ footer i {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     width: 55%;
     cursor: pointer;
-    transition: all 500ms;
+    /* transition: all 500ms; */
 }
+
 
 .menu__btn > button:hover {
     background: #FF79DA;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-
-
 }
 
