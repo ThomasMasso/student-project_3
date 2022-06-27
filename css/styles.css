@@ -473,9 +473,8 @@ footer i {
     border-radius: 15px;
     margin-bottom: 15px;
     margin-top: 15px;
-    height: 70px;
+    /* height: 70px; */
     overflow: hidden;
-    /* border: 1px solid orange; */
 }
 
 .menu__texte-container {
@@ -489,21 +488,12 @@ footer i {
     padding: 13px 0 13px 13px;
     width: 81%;
     height: 100%;
-    /* border: 1px solid blue; */
-}
-
-.menu__item-header > h3 {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 .menu__item-header > p {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     font-size: 14px;
     margin-top: 5px;
+    margin-bottom: 0;
 }
 
 .menu__item-price {
@@ -511,7 +501,6 @@ footer i {
     padding-bottom: 13px;
     width: 10%;
     margin: 0 4% 0 5%;
-    /* border: 1px solid red; */
 }
 
 .add-to-cart {
@@ -519,15 +508,13 @@ footer i {
     justify-content: center;
     align-items: center;
     width: 0;
-    height: 100%;
+    height: auto;
     font-size: 17px;
     background: #99e2d0;
     color: #FFF;
     transform: translateX(100%);
     transition: all 300ms;
-    /* border: 1px solid greenyellow; */
 }
-
 
 .menu__item-container:hover .add-to-cart {
     transform: translateX(0);
@@ -538,9 +525,18 @@ footer i {
     margin: 0 6% 0 5%;
 }
 
-/* .menu__card:hover .menu__txt {
-    width: 85%;
-} */
+.menu__item-container:hover .menu__item-header > h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.menu__item-container:hover .menu__item-header > p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 
 @keyframes spin {
     0% {
