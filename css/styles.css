@@ -121,7 +121,7 @@ input:focus {
     color: #FFF;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: background 100ms, box-shadow 300ms;
+    transition: background 10000ms, box-shadow 300ms;
 }
 
 .booking__btn > button:hover {
@@ -299,7 +299,7 @@ nav h2 {
     color: transparent;
     transform-origin: bottom;
     transition: all 300ms ease-in;
-    
+
 }
 
 .card__heart .fa-solid:hover {
@@ -388,7 +388,7 @@ footer i {
 }
 
 .menu-restaurant__heart {
-    padding-right: 7%;
+    padding-right: 12%;
     font-size: 26px;
 }
 
@@ -410,7 +410,7 @@ footer i {
     color: transparent;
     transform: translateY(20%);
     transition: all 200ms ease-in;
-    
+
 }
 
 .menu-restaurant__heart .fa-solid:hover {
@@ -451,17 +451,43 @@ footer i {
 
 /* menu card */
 
-.menu__card {
+.btn__card:hover {
+    cursor: pointer;
+}
+
+
+
+.menu__txt {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    width: 100%;
+}
+
+.menu__card {
+    display: flex;
     background: #FFF;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
-    padding: 13px;
     margin-bottom: 15px;
     margin-top: 15px;
     width: 95%;
+    height: 70px;
+    overflow: hidden;
+}
+
+.card__text {
+    padding: 13px 0 13px 13px;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card__text > h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .card__quote {
@@ -471,7 +497,45 @@ footer i {
 .card__price {
     font-weight: bold;
     padding-right: 3%;
+    padding-bottom: 13px;
 }
+
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 100%;
+    font-size: 17px;
+    background: #99e2d0;
+    color: #FFF;
+    /* z-index: -1; */
+    transform: translateX(100%);
+    /* transform-origin: right; */
+    transition: all 300ms;
+}
+
+
+.menu__card:hover .add-to-cart {
+    /* z-index: 1; */
+    transform: translateX(0);
+    width: 18%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.menu__card:hover i {
+    animation: spin 300ms forwards;
+}
+
+
 
 .menu__btn {
     display: flex;
@@ -496,7 +560,7 @@ footer i {
 .menu__btn > button:hover {
     background: #FF79DA;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-    
+
 
 }
 
