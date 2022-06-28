@@ -9,7 +9,7 @@ body {
     padding: 0;
     /* position: absolute;
     width: 100%; */
-    /* height: 100vh; */
+    height: 100vh;
 }
 
 h1 {
@@ -274,6 +274,10 @@ nav h2 {
 .card__quote {
     display: inline-block;
     margin-top: 5px;
+}
+
+.heart {
+    margin-right: 5%;
 }
 
 .card__heart {
@@ -620,4 +624,52 @@ footer i {
     }
 }
 
+.loader {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(255,121,218,0.8) 0%, rgba(147,86,220,0.8) 85%);
+    opacity: 1;
+    animation: loader 3000ms forwards;
+}
+
+.loader__anim {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #9356DC ;
+    border-color: #9356DC #FF79DA transparent #99E2D0;
+    border-radius: 50%;
+    animation: loader-anim 1000ms cubic-bezier(0,.7,1,.61) infinite;
+}
+
+@keyframes loader {
+    0% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes loader-anim {
+    0% {
+        transform: rotate(0turn);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+}
 
