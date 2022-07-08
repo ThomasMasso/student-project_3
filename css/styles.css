@@ -804,6 +804,45 @@ footer i {
 }
 
 @media screen and (min-width: 1101px) and (max-width: 1800px) {
+    
+    nav h2 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .filters {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .filters__restaurant {
+        width: fit-content;
+    }
+
+    .restaurants {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .restaurants h2 {
+        align-self: flex-start;
+        margin: 2% 0 4% 4%;
+    }
+
+    .restaurants__container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .restaurants__card {
+        width: 45%;
+        margin-bottom: 50px;
+    }
+    
     .menu__hr {
         width: 35px;
     }
@@ -860,6 +899,53 @@ footer i {
     body {
         /* width: 1800px; */
         margin: auto;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav h2 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .filters {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .filters__restaurant {
+        width: fit-content;
+    }
+
+    .restaurants {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .restaurants h2 {
+        align-self: center;
+        margin: 2% 0 4% 4%;
+        margin-left: 0;
+    }
+
+    .restaurants__container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 70%;
+    }
+
+    .restaurants__card {
+        width: 45%;
+        margin-bottom: 50px;
     }
 
     .menu-restaurant__title {

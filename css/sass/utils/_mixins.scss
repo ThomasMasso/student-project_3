@@ -1,0 +1,16 @@
+@mixin shadow {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+@mixin element-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin linear {
+    background-image: linear-gradient(#FF79DA, #9356DC);
+}
+@mixin img-cover {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
