@@ -454,7 +454,7 @@ footer i {
 .menu__hr {
     height: 3px;
     background-color: #99e2d0;
-    width: 12%;
+    width: 35px;
     border: none;
     margin-left: 0;
     margin-top: 5px;
@@ -702,7 +702,7 @@ footer i {
     }
 
     .menu__item {
-        width: 45%;
+        width: 75%;
     }
 
     footer {
@@ -771,7 +771,7 @@ footer i {
     }
 
     .menu__item {
-        width: 40%;
+        width: 75%;
         min-width: 300px;
         margin: 1%;
     }
@@ -855,7 +855,7 @@ footer i {
     }
 
     .menu__item {
-        width: 30%;
+        width: 45%;
         min-width: 300px;
         margin: 1%;
     }
