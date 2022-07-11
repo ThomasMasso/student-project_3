@@ -502,13 +502,13 @@ footer i {
     height: 100%;
 }
 
-.menu__item-header > h3 {
+.menu__item-header>h3 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.menu__item-header > p {
+.menu__item-header>p {
     font-size: 14px;
     margin-top: 5px;
     margin-bottom: 0;
@@ -810,7 +810,7 @@ footer i {
 }
 
 @media screen and (min-width: 1101px) and (max-width: 1800px) {
-    
+
     nav h2 {
         margin-bottom: 30px;
         text-align: center;
@@ -848,7 +848,7 @@ footer i {
         width: 45%;
         margin-bottom: 50px;
     }
-    
+
     .menu__hr {
         width: 35px;
     }
