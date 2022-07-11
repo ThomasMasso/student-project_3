@@ -560,8 +560,6 @@ footer i {
 }
 
 
-
-
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -575,8 +573,6 @@ footer i {
 .menu__item-container:hover i {
     animation: spin 300ms forwards;
 }
-
-
 
 .menu__btn {
     display: flex;
@@ -597,7 +593,6 @@ footer i {
     cursor: pointer;
     /* transition: all 500ms; */
 }
-
 
 .menu__btn>button:hover {
     background: #FF79DA;
@@ -648,6 +643,8 @@ footer i {
         opacity: 1;
     }
 }
+
+/* loader */
 
 .loader {
     position: fixed;
